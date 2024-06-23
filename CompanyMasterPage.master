@@ -1,0 +1,202 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CompanyMasterPage.master.cs" Inherits="MasterPage" %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>CETPA Infotech Pvt Ltd</title>
+    <meta name = "description" content = "" />
+    <meta name = "keywords" content = "" />
+    <link rel = "stylesheet" media = "screen" href = "css/layout.css" />
+    <link rel = "stylesheet" media = "screen" href = "css/typography.css" />
+    <link rel = "stylesheet" media = "screen" href = "css/general.css" />
+    <link rel = "stylesheet" media = "screen" href = "css/home.css" />
+    <link rel = "Shortcut Icon" href = "images/animated_favicon1.gif" />
+   <%-- <script src="JS" type="text/javascript"></script>--%>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="menu_style.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+         .st1
+    {
+        text-decoration :none;
+        }
+        .st1:hover
+        {
+            color:Black ;
+            text-decoration :underline;
+            
+            }
+    </style>
+
+
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div id = "header">
+   <div class = "container">
+     <ul id = "main-menu">
+  <li class = "active"><a href = "http://www.cetpainfotech.com/default.aspx">Home</a></li>
+            <li><a href = "http://www.cetpainfotech.com/about%20us.aspx">About</a></li>
+            <li><a href = "http://www.cetpainfotech.com/services.aspx">Services</a></li>
+            <li><a href = "http://www.cetpainfotech.com/training.aspx">Training</a></li>
+            <li><a href = "http://www.cetpainfotech.com/contactus.aspx">Contact</a></li>
+        </ul>
+	</div>     
+</div>
+<div id = "main">
+	<div id = "wrapper">
+    	<div class  = "container">
+        	<div id = "content">
+           		<div id = "top">
+                    <div id = "photo">
+                        <img src = "images/photo.jpg" alt = ""/>
+                    </div>
+                     <div id = "intro">
+                    
+                        <div id = "welcome">
+                            <h1> CETPA ONLINE JOB PORTAL</h1>
+                            <p>Welcome to CETPA Consultancy Services. We are glad to provide
+                                <span class="field2">job for CETPA Certified students has successfully placed 
+                                students in the renowned organizations of India and abroad in the past eight 
+                                years.The top companies of India and abroad have always been the targets and the 
+                                best possible career opportunity has been the focus of CETPA.</span></p>
+                            
+                                
+                       
+                        </div>
+                        <div id = "phone">
+                            &nbsp;<h2>
+                                &nbsp;</h2>
+                        </div>
+                        <div id = "newsletter">
+                        <center >
+                            <span>Call us Toll Free !!<br />1800 - 102 - 4262<br /> </span>&nbsp;</center></div>
+                    </div>
+                </div>
+                <div id = "bottom">
+                </div>   
+                <table class="style1" id="a1">
+                    <tr>
+                        <td valign="top" width="228px" bgcolor="#000066">
+                            </td>
+                        <td align="left" valign="top" bgcolor="#FF9933">
+                            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                                <Items>
+                                    <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Login" Value="Login">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/SearchJobMaster.aspx" Text="Job Search" 
+                                        Value="Job Search"></asp:MenuItem>
+                                </Items>
+                            </asp:Menu>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="228px" align="left">
+                         
+                            <div id="button">
+                                <ul>
+                                    <li><a href="WelComeCompany.aspx">Welcome</a></li>
+                                    <li><a href="CompanyWholeDetails.aspx">Company Details</a></li>
+                                    <li><a href="AddJobDetailsByCompany.aspx">Add Job By Company</a></li>
+
+                                    <li><a href="SearchJobSeekerByCompany.aspx">Search JobSeeker</a></li>
+                                    <li><a href="UpdateJobByCompany.aspx">Job Update</a></li>
+                                    <li><a href="Login.aspx">Logout</a></li>
+                                   
+                                </ul>
+                            </div>
+                         
+</td>
+                        <td align="left" valign="top">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div></div>
+<div id = "footer">
+	<div class = "container">
+        <ul id = "footer-menu">
+            <li class = "active"><a href = "http://www.cetpainfotech.com/default.aspx">Home</a></li>
+            <li><a href = "http://www.cetpainfotech.com/about%20us.aspx">About</a></li>
+            <li><a href = "http://www.cetpainfotech.com/services.aspx">Services</a></li>
+            <li><a href = "http://www.cetpainfotech.com/training.aspx">Training</a></li>
+            <li class = "last"><a href = "http://www.cetpainfotech.com/contactus.aspx">Contact</a></li>
+        </ul>
+        
+        <div id = "info">
+                Copyright © 2011 CETPA InfoTech Pvt.Ltd. | All Rights Reserved
+        </div>
+    </div>	
+</div>
+    </form>
+</body>
+</html>
